@@ -1,6 +1,6 @@
 mkdir ~/dev/ && cd $_
 mkdir .tools && cd $_
-git clone https://gist.github.com/EwenQuim/8d3a63f114d3563a1daae755d1bfc8eb.git .
+git clone https://github.com/EwenQuim/.dotfiles.git
 source .aliases
-echo "source ~/dev/.tools/.aliases" >> ~/.bashrc
+echo "source ~/.dotfiles/.aliases" >> ~/.bashrc
 
