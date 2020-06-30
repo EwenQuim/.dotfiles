@@ -1,0 +1,90 @@
+# Main automated config
+
+# Temp
+alias ,proj="cd /home/lanfeust/dev/java/projetJava/Group22_MyVelib_Houede_Quimerch/bin"
+alias solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
+alias ,node="cd /home/lanfeust/dev/web/node-tuto"
+
+# The following command pulls aliases, edit them, and push them and apply them WOW
+alias ,aliases="cd ~/dev/.tools/ && git pull && nano .aliases && git commit -a -v && git push origin master; source .aliases; cd -"
+alias ,aliases-setup="cat ~/dev/.tools/do-this"
+
+alias ,zsh="nano ~/.zshrc"
+alias ,zsh-apply="source ~/.zshrc"
+alias ,bash="nano ~/.bashrc"
+alias ,bash-apply="source ~/.bashrc"
+
+# Usual Shell command (cd, ls...)
+alias dirs="ls -al | grep '^d'"
+alias l="ls -al"
+alias lf="ls -aFG"
+alias lm="ls -al|more"
+alias lt='ls --human-readable --size -1 -S --classify'
+alias h="history"
+alias qp="ps auxwww|more"
+alias nu="who|wc -l"
+
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+alias ,dev='cd ~/dev'
+
+# GIT
+alias ,gpom="git push origin master"
+alias ,status="git status"
+alias ,branch="git branch"
+alias ,checkout="git checkout"
+alias ,gc="git add . && git commit -a -S -v"
+alias ,commit=",gc"
+alias ,push="git push"
+alias ,diff="git diff"
+alias ,merge="git merge"
+
+
+# Python
+alias ,virtualenv-activate='source env/bin/activate && which python && echo virtualenv activated!'
+alias ,virtualenv-create='virtualenv -p python3 env/ && ,virtualenv-activate'
+alias ,virtualenv-delete='rm -rf env/'
+alias ,virtualenv-fill=',virtualenv-activate && echo Filling the previous space && pip3 install -r requirements.txt && echo Following packages installed && pip3 freeze'
+alias py=python3
+
+# Google Drive
+alias ,google-drive-mount='google-drive-ocamlfuse ~/GoogleDrive'
+
+# Proxy ViaRezo
+alias ,proxyVR="sshuttle -r lanfeust@proxy.viarezo.fr -x proxy.viarezo.fr 138.195.128.0/19 192.168.0.0/16 10.0.0.0/8"
+
+# NOhup-ed editors, with nohup file transfered in home so it doesn't pollute
+alias ,renpy="cd && nohup ~/dev/renpy-7.3.5-sdk/renpy.sh &;cd -"
+alias ,unity="cd && nohup ~/dev/unity/UnityHub.AppImage &"
+
+# Internet
+alias ,ping='ping -c 5'
+alias ,ping-test='ping -c 5 8.8.8.8'
+
+# Install
+alias ,install="sudo apt install"
+alias ,remove="sudo apt remove"
+alias ,update="sudo apt update && apt list --upgradeable"
+alias ,upgrade="sudo apt upgrade -y && sudo apt autoremove -y"
+
+
+# Useful stuff
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias h='history'
+alias j='jobs -l'
+alias ,path='echo -e ${PATH//:/\\n}'
+alias ,path-add="echo 'export PATH=$PATH:$(pwd)' >> ~/.zshrc"
+alias now='date +"%T"'
+alias nowdate='date +"%d-%m-%Y"'
+alias ,clear-cache-memory="echo 'run this as root : \n sync; echo 1 > /proc/sys/vm/drop_caches'"
+
+# Personnal stuff
+alias ,coal="cd ~/dev/coalescence"
+alias ,blog="cd ~/dev/web/ewenquim.github.io"
+alias ,blog-edit="code ~/dev/web/ewenquim.github.io"
