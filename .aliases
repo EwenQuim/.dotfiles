@@ -1,8 +1,7 @@
 # Main automated config
 
 # Temp
-alias ,proj="cd /home/lanfeust/dev/java/projetJava/Group22_MyVelib_Houede_Quimerch/bin"
-alias solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
+alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
 alias ,node="cd /home/lanfeust/dev/web/node-tuto"
 
 # The following command pulls aliases, edit them, and push them and apply them WOW
