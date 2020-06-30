@@ -6,8 +6,8 @@ alias solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
 alias ,node="cd /home/lanfeust/dev/web/node-tuto"
 
 # The following command pulls aliases, edit them, and push them and apply them WOW
-alias ,aliases="cd ~/dev/.tools/ && git pull && nano .aliases && git commit -a -v && git push origin master; source .aliases; cd -"
-alias ,aliases-setup="cat ~/dev/.tools/do-this"
+alias ,aliases="cd ~/.dotfiles/ && git pull && nano .aliases && git commit -a -v && git push origin master; source .aliases; cd -"
+alias ,aliases-setup="cat ~/.dotfiles/do-this"
 
 alias ,zsh="nano ~/.zshrc"
 alias ,zsh-apply="source ~/.zshrc"
