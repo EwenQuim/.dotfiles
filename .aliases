@@ -33,7 +33,7 @@ alias .5='cd ../../../../..'
 
 alias ,dev='cd ~/dev'
 
-# GIT
+# Git
 alias ,gpom="git push origin master"
 alias ,status="git status"
 alias ,branch="git branch"
