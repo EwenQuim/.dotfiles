@@ -13,6 +13,8 @@ alias ,zsh-apply="source ~/.zshrc"
 alias ,bash="vim ~/.bashrc"
 alias ,bash-apply="source ~/.bashrc"
 
+alias ,vim="vim ~/.vimrc"
+
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
 alias l="ls -al"
