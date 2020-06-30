@@ -45,7 +45,6 @@ alias ,push="git push"
 alias ,diff="git diff"
 alias ,merge="git merge"
 
-
 # Python
 alias ,virtualenv-activate='source env/bin/activate && which python && echo virtualenv activated!'
 alias ,virtualenv-create='virtualenv -p python3 env/ && ,virtualenv-activate'
