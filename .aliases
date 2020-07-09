@@ -17,6 +17,7 @@ alias ,vim="vim ~/.vimrc"
 
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
+alias ls="ls --group-directories-first"
 alias l="ls -al"
 alias lf="ls -aFG"
 alias lm="ls -al|more"
