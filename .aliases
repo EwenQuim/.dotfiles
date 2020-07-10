@@ -25,6 +25,7 @@ alias lt='ls --human-readable --size -1 -S --classify'
 alias h="history"
 alias qp="ps auxwww|more"
 alias nu="who|wc -l"
+alias ccat='pygmentize -g'
 
 alias cd..='cd ..'
 alias ..='cd ..'
