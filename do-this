@@ -1,4 +1,5 @@
-sudo apt install git
+audo apt update -y 
+sudo apt install -y git
 git clone https://github.com/EwenQuim/.dotfiles.git
 
 cd .dotfiles/
