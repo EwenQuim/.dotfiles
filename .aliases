@@ -73,8 +73,7 @@ alias ,ping-test='ping -c 5 8.8.8.8'
 alias ,install="sudo apt install"
 alias ,remove="sudo apt remove"
 alias ,update="sudo apt update && apt list --upgradeable"
-alias ,upgrade="sudo apt upgrade -y && sudo apt autoremove -y"
-
+alias ,upgrade="sudo apt upgrade -y && sudo apt autoremove -y && clear && echo Everything up-to-date"
 
 # Useful stuff
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
