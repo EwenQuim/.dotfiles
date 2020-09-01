@@ -26,7 +26,7 @@ alias rm='rm -v --preserve-root'
 alias h="history"
 alias qp="ps auxwww|more"
 alias nu="who|wc -l"
-alias ccat='pygmentize -g'
+alias ccat='pygmentize -g | less'
 
 alias cd..='cd ..'
 alias ..='cd ..'
