@@ -17,8 +17,7 @@ alias ,vim="vim ~/.vimrc"
 
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
-alias ls="ls --color=auto --group-directories-first"
-alias l="ls -lahF --group-directories-first"
+alias l="ls -lahF"
 alias lf="ls -aFG"
 alias lm="ls -al|more"
 alias lt='ls --human-readable --size -1 -S --classify'
