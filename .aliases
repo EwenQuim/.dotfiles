@@ -38,17 +38,6 @@ alias .5='cd ../../../../..'
 
 alias ,dev='cd ~/dev'
 
-# Git
-alias ,gpom="git push origin master"
-alias ,status="git status"
-alias ,branch="git branch"
-alias ,checkout="git checkout"
-alias ,gc="git add . && git commit -a -S -v"
-alias ,commit=",gc"
-alias ,push="git push"
-alias ,diff="git diff"
-alias ,merge="git merge"
-
 # Python
 alias ,venv-activate='source env/bin/activate && which python && echo virtualenv activated!'
 alias ,venv-create='virtualenv -p python3 env/ && ,venv-activate'
