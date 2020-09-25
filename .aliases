@@ -38,6 +38,9 @@ alias .5='cd ../../../../..'
 
 alias ,dev='cd ~/dev'
 
+# Git
+alias gs="git status"
+
 # Python
 alias ,venv-activate='source env/bin/activate && which python && echo virtualenv activated!'
 alias ,venv-create='virtualenv -p python3 env/ && ,venv-activate'
