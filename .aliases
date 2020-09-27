@@ -30,13 +30,12 @@ alias ccat='pygmentize -g'
 
 alias cd..='cd ..'
 alias ..='cd ..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 alias .....='cd ../../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
 
 alias ,dev='cd ~/dev'
+alias ,web='cd ~/dev/web/'
 
 # Git
 alias gs="git status"
@@ -79,6 +78,6 @@ alias nowdate='date +"%d-%m-%Y"'
 alias ,clear-cache-memory="echo 'run this as root : \n sync; echo 1 > /proc/sys/vm/drop_caches'"
 
 # Personnal stuff
-alias ,coal="cd ~/dev/coalescence"
+alias ,coalescence="cd ~/dev/coalescence"
 alias ,blog="cd ~/dev/web/ewenquim.github.io"
 alias ,blog-edit="code ~/dev/web/ewenquim.github.io"
