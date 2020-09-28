@@ -18,7 +18,8 @@ alias ,vim="vim ~/.vimrc"
 
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
-alias l="ls -lahF"
+alias ll="ls -lahF"
+alias l="ls"
 alias lf="ls -aFG"
 alias lm="ls -al|more"
 alias lt='ls --human-readable --size -1 -S --classify'
