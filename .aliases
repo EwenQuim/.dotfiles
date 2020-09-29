@@ -1,5 +1,8 @@
 # Main automated config
 
+# Docker
+alias ,docker-compose-up="sudo docker-compose up"
+
 # Temp
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
 alias ,node="cd /home/lanfeust/dev/web/node-tuto"
