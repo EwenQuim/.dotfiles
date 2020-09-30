@@ -1,7 +1,7 @@
 # Main automated config
 
 # Docker
-alias ,docker-compose-up="sudo docker-compose up"
+alias ,docker-compose="sudo docker-compose"
 
 # Temp
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
