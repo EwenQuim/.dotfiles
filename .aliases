@@ -1,5 +1,8 @@
 # Main automated config
 
+# Node
+alias ,i='npm install'
+
 # Docker
 alias ,compose="sudo docker-compose"
 alias ,docker="sudo docker"
