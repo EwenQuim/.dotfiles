@@ -1,5 +1,6 @@
 audo apt update -y 
-sudo apt install -y git
+sudo apt install -y git zsh virtualenv
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/EwenQuim/.dotfiles.git
 
 cd .dotfiles/
