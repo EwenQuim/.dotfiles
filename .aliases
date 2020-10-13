@@ -47,6 +47,7 @@ alias ,web='cd ~/dev/web/'
 
 # Git
 alias gs="git status"
+alias grab="git branch | grep -v "master" | xargs git branch -D"
 
 # Python
 alias ,venv-activate='source env/bin/activate && which python && echo virtualenv activated!'
