@@ -19,9 +19,9 @@ if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
 else
     read response\?"${bold}> Enter a commit message? [y/N]${normal} "
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
-        git add -A; git commit;
+        git add -A; git commit ||
     else
-        git add -A; git commit -m "SYNC SYSTEM";
+        git add -A; git commit -m "SYNC SYSTEM" ||
     fi ;
 
     echo "\n${bold}> Uploading conf${normal}"
