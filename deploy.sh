@@ -22,7 +22,7 @@ else
         git add -A; git commit;
     else
         git add -A; git commit -m "SYNC SYSTEM";
-    fi
+    fi ;
 
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
