@@ -1,11 +1,8 @@
 # Custom prompt order
 PROMPT='$(virtualenv_prompt_info)'
 
-eval my_purple='$FG[228]'
-PROMPT+="$my_purple%c %{$reset_color%}%# "
-
 if [[ "$OSTYPE" != "darwin"* ]]; then
-    PROMPT+="%{$fg_bold[yellow]%} $USER on %M %{$reset_color%}"
+    PROMPT+="%{$fg_bold[yellow]%} $USER@%M %{$reset_color%}"
 fi
 
 PROMPT+="%{$fg_bold[cyan]%}%3c%{$reset_color%} "
