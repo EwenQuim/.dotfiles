@@ -2,12 +2,6 @@
 eval $(thefuck --alias)
 alias f='fuck'
 
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-}
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
