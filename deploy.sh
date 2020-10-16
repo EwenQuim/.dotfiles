@@ -8,8 +8,10 @@ set -e
 echo "\n${bold}> Pulling remote conf${normal}"
 git pull; git diff
 
-read response\?"${bold}> Are you sure to apply dotfile changes? [y/N] "
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
+read response\?"${bold}> Are you sure to apply dotfile changes? [Y/n]${normal} "
+if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
+    exit 0
+else
     git commit -a -v
 
     echo "\n${bold}> Uploading conf${normal}"
@@ -19,8 +21,6 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
     cp -v zsh/.zshrc ~/.zshrc
     cp -v zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
 
-    echo "\n${bold}> Everything is synchronized${normal}"
+    echo "\n${bold}> Zsh configuration synchronized${normal}"
     zsh
-else
-  exit 0
 fi

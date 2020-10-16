@@ -13,8 +13,8 @@ alias ,node="cd /home/lanfeust/dev/web/node-tuto"
 
 # The following command pulls aliases, edit them, and push them and apply them WOW
 alias ,aliases="vim ~/.dotfiles/.aliases"
-alias ,dotfiles-sync="~/.dotfiles/deploy.sh"
-alias ,dotfiles-first-setup="cat ~/.dotfiles/do-this"
+alias ,sync="~/.dotfiles/deploy.sh"
+alias ,sync-first-setup="cat ~/.dotfiles/do-this"
 
 alias ,zsh="vim ~/.dotfiles/zsh/.zshrc"
 alias ,zsh-local="vim ~/.zshrc"
