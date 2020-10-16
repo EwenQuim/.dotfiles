@@ -1,15 +1,18 @@
-#!/bin/bash
+#!/bin/zsh
+
+bold=$(tput bold)
+normal=$(tput sgr0)
 
 set -e
 
-echo "> Pulling remote conf"
+echo "\n${bold}> Pulling remote conf${normal}"
 git pull;
 
-read -r -p "Are you sure? [y/N] " response
+read response\?"Are you sure? [y/N] "
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
     git commit -a -v
 
-    echo "> Uploading conf"
+    echo "\n${bold}> Uploading conf${normal}"
     git push origin master
 
     echo "\n${bold}> Copying zsh & oh-my-zsh conf${normal}"
