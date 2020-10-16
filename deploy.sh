@@ -5,16 +5,25 @@ normal=$(tput sgr0)
 
 set -e
 
-cd ~/.dotfiles
+echo "\n${bold}> ZSH conf deployer${normal}"
 
-echo "\n${bold}> Pulling remote conf${normal}"
-git pull; git diff
+
+cd ~/.dotfiles
+git diff
 
 read response\?"${bold}> Are you sure to apply dotfile changes? [Y/n]${normal} "
 if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
     exit 0
 else
-    git commit -a -v
+    read response\?"${bold}> Enter a commit message? [y/N]${normal} "
+    if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
+        git add -A; git commit;
+    else
+        git add -A; git commit -m "SYNC SYSTEM";
+    fi
+
+    echo "\n${bold}> Pulling remote conf${normal}"
+    git pull;
 
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
