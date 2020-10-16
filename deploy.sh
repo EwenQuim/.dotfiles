@@ -29,7 +29,7 @@ else
     cp -v zsh/.zshrc ~/.zshrc
     cp -v zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
 
-    echo "\n${bold}> ZSH configuration synchronized${normal}"
+    echo "\n${bold}ZSH configuration synchronized ✅${normal}"
     source ~/.zshrc
 fi
 
