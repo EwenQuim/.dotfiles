@@ -4,8 +4,6 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 GREEN='\033[0;32m'
 
-set -e
-
 echo "\n${bold}> ZSH conf deployer${normal}"
 
 cd ~/.dotfiles
