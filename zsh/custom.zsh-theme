@@ -2,9 +2,9 @@
 PROMPT='$(virtualenv_prompt_info)'
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
-    PROMPT+="%{fg_bold[yellow]%n%}"
-    PROMPT+="%{fg_bold[yellow]@%}"
-    PROMPT+="%{fg_bold[yellow]%m%} "
+    PROMPT+="%{fg_bold[yellow]%}%n"
+    PROMPT+="@"
+    PROMPT+="%m%{$reset_color%} "
 fi
 
 PROMPT+="%{$fg_bold[cyan]%}%3c%{$reset_color%} "
