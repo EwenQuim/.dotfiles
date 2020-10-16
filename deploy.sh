@@ -14,7 +14,7 @@ read response\?"${bold}> Are you sure to apply dotfile changes? [Y/n]${normal} "
 if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
     exit 0
 else
-    git commit -a -v
+    git commit -a -v ||
 
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
