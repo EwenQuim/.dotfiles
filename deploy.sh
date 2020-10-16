@@ -2,14 +2,16 @@
 
 bold=$(tput bold)
 normal=$(tput sgr0)
+GREEN='\033[0;32m'
 
 set -e
 
 echo "\n${bold}> ZSH conf deployer${normal}"
 
-
 cd ~/.dotfiles
-git diff
+
+echo "\n${bold}> Pulling remote conf${normal}"
+git pull; git diff
 
 read response\?"${bold}> Are you sure to apply dotfile changes? [Y/n]${normal} "
 if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
@@ -22,9 +24,6 @@ else
         git add -A; git commit -m "SYNC SYSTEM";
     fi
 
-    echo "\n${bold}> Pulling remote conf${normal}"
-    git pull;
-
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
 
@@ -32,7 +31,7 @@ else
     cp -v zsh/.zshrc ~/.zshrc
     cp -v zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
 
-    echo "\n${bold}> Zsh configuration synchronized${normal}"
+    echo "\n${bold}> ${GREEN}Zsh configuration synchronized${normal}"
     zsh
 fi
 
