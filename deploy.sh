@@ -4,7 +4,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 GREEN='\033[0;32m'
 
-echo "\n${bold}> ZSH conf deployer${normal}"
+echo "\n${bold}        ZSH conf deployer${normal}"
 
 cd ~/.dotfiles
 
@@ -29,7 +29,7 @@ else
     cp -v zsh/.zshrc ~/.zshrc
     cp -v zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
 
-    echo "\n${bold}> ${GREEN}Zsh configuration synchronized${normal}"
+    echo "\n${bold}> ZSH configuration synchronized${normal}"
     source ~/.zshrc
 fi
 
