@@ -6,7 +6,7 @@ alias f='fuck'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 
 # Theme to load
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
