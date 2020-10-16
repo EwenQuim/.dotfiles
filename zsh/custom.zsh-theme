@@ -1,5 +1,8 @@
 # Custom prompt order
 PROMPT='$(virtualenv_prompt_info)'
+PROMPT+="%n"
+PROMPT+="@"
+PROMPT+="%m"
 PROMPT+="%{$fg_bold[cyan]%}%3c%{$reset_color%} "
 PROMPT+="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
