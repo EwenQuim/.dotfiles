@@ -17,10 +17,10 @@ if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
 else
     read response\?"${bold}> Enter a commit message? [y/N]${normal} "
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
-        git add -A; git commit ||
+        git add -A; git commit; echo "Sync msg written"
     else
-        git add -A; git commit -m "SYNC SYSTEM" ||
-    fi ;
+        git add -A; git commit -m "System sync"; echo "Sync msg written automatically"
+    fi
 
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
