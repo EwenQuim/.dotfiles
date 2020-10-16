@@ -5,6 +5,8 @@ normal=$(tput sgr0)
 
 set -e
 
+cd ~/.dotfiles
+
 echo "\n${bold}> Pulling remote conf${normal}"
 git pull; git diff
 
@@ -24,3 +26,5 @@ else
     echo "\n${bold}> Zsh configuration synchronized${normal}"
     zsh
 fi
+
+cd -
