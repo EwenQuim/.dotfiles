@@ -1,12 +1,6 @@
 # Custom prompt order
 PROMPT='$(virtualenv_prompt_info)'
 
-if [[ "$OSTYPE" != "darwin"* ]]; then
-    PROMPT+="%{fg_bold[yellow]%}%n"
-    PROMPT+="@"
-    PROMPT+="%m%{$reset_color%} "
-fi
-
 PROMPT+="%{$fg_bold[cyan]%}%3c%{$reset_color%} "
 PROMPT+="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
