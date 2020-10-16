@@ -32,7 +32,7 @@ else
     cp -v zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
 
     echo "\n${bold}> ${GREEN}Zsh configuration synchronized${normal}"
-    zsh
+    source ~/.zshrc
 fi
 
 cd -
