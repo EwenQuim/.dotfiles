@@ -1,3 +1,11 @@
+#!/bin/bash
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+set -euxo pipefail
+
+echo "\n${bold}Pulling remote conf${normal}"
 git pull
 git diff
 
@@ -17,11 +25,16 @@ confirm() {
 
 confirm &&
 
-git commit -a -v && 
+git commit -a -v &&
+
+echo "\n${bold}Uploading conf${normal}" &&
+
 git push origin master &&
+
+echo "\n${bold}Copying zsh & oh-my-zsh conf${normal}"
 
 cp zsh/.zshrc ~/.zshrc &&
 
-cp zsh/custom.zsh-theme .oh-my-zsh/custom/themes/ &&
+cp zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/ &&
 
 zsh
