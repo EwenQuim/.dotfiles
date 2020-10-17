@@ -42,12 +42,12 @@ source ~/.dotfiles/.aliases
 ############
 
 # Custom bin commands
-export PATH="$PATH:~/.dotfiles/bin"
+export PATH="$PATH:$HOME/.dotfiles/bin"
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
 fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
