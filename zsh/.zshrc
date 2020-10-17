@@ -44,12 +44,10 @@ source ~/.dotfiles/.aliases
 # Custom bin commands
 export PATH="$PATH:~/.dotfiles/bin"
 
-# Python
-export PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
-
 # Pyenv
-export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
