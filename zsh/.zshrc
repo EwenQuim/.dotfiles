@@ -24,6 +24,7 @@ plugins=(
 	github
 	docker
 	virtualenv
+	ng
 )
 
 source $ZSH/oh-my-zsh.sh
