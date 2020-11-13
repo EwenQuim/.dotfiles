@@ -23,6 +23,7 @@ plugins=(
 	git-prompt
 	github
 	docker
+    docker-compose
 	virtualenv
 	ng
 )
