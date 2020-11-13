@@ -6,7 +6,7 @@ alias ,i='npm install'
 # Docker
 alias ,compose="sudo docker-compose"
 alias ,docker="sudo docker"
-alias dc="docker-compose"
+alias ,dc="docker-compose"
 
 # Temp
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
