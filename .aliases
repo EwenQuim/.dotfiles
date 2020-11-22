@@ -53,7 +53,7 @@ alias grab="git branch | grep -v "master" | xargs git branch -D"
 
 # Python
 alias ,venv-activate='source env/bin/activate && which python && echo virtualenv activated!'
-alias ,venv-create='virtualenv -p python3 env/ && ,venv-activate'
+alias ,venv-create='python3 -m venv env/ && ,venv-activate'
 alias ,venv-delete='rm -rf env/'
 alias ,venv-fill=',venv-activate && echo Filling the previous space && pip3 install -r requirements.txt && echo Following packages installed && pip3 freeze'
 alias py=python3
