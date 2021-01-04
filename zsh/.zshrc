@@ -54,3 +54,7 @@ fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 export DBURL="mongodb+srv://quimerch:RzTws2yIcGQhUd9p@quimtest.fcwwu.mongodb.net/minedb?retryWrites=true&w=majority"
+
+# Deno
+export DENO_INSTALL="/Users/ewen/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
