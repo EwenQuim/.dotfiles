@@ -20,9 +20,9 @@ alias ,sync-first-setup="cat ~/.dotfiles/do-this"
 
 alias ,zsh="vim ~/.dotfiles/zsh/.zshrc"
 alias ,zsh-local="vim ~/.zshrc"
-alias ,zsh-apply="source ~/.zshrc"
-alias ,bash="vim ~/.bashrc"
-alias ,bash-apply="source ~/.bashrc"
+alias ,zsh-local-apply="source ~/.zshrc"
+alias ,bash-local="vim ~/.bashrc"
+alias ,bash-local-apply="source ~/.bashrc"
 
 alias ,vim="vim ~/.vimrc"
 
