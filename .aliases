@@ -11,7 +11,6 @@ alias ,up="docker-compose up -d --build"
 
 # Temp
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
-alias ,node="cd /home/lanfeust/dev/web/node-tuto"
 
 # The following command pulls aliases, edit them, and push them and apply them WOW
 alias ,aliases="vim ~/.dotfiles/.aliases"
@@ -25,6 +24,8 @@ alias ,bash-local="vim ~/.bashrc"
 alias ,bash-local-apply="source ~/.bashrc"
 
 alias ,vim="vim ~/.vimrc"
+
+alias ,go="cd ~/go/src/"
 
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
