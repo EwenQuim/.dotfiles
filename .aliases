@@ -25,7 +25,7 @@ alias ,bash-local-apply="source ~/.bashrc"
 
 alias ,vim="vim ~/.vimrc"
 
-alias ,go="cd ~/go/src/"
+alias ,go="cd ~/go/src/github.io/ewenquim"
 
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
