@@ -94,3 +94,4 @@ alias ,clear-cache-memory="echo 'run this as root : \n sync; echo 1 > /proc/sys/
 alias ,coalescence="cd ~/dev/coalescence"
 alias ,blog="cd ~/dev/web/ewenquim.gitlab.io"
 alias ,blog-edit="code ~/dev/web/ewenquim.gitlab.io"
+alias ,work="cd ~/work"
