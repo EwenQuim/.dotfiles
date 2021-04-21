@@ -24,7 +24,7 @@ plugins=(
 	github
 	docker
 	virtualenv
-	ng
+    golang
 )
 
 source $ZSH/oh-my-zsh.sh
