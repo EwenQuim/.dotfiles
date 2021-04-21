@@ -95,3 +95,6 @@ alias ,coalescence="cd ~/dev/coalescence"
 alias ,blog="cd ~/dev/web/ewenquim.gitlab.io"
 alias ,blog-edit="code ~/dev/web/ewenquim.gitlab.io"
 alias ,work="cd ~/work"
+
+# bat + fzf explorer
+alias xxx="bat $(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')"
