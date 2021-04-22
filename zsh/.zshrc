@@ -38,6 +38,9 @@ export EDITOR='vim'
 # Load aliases
 source ~/.dotfiles/.aliases
 
+# Fuzzy Search uses `fd` instead of default `find`
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
 ############
 ### PATH ###
 ############
