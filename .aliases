@@ -96,3 +96,4 @@ alias ,work="cd ~/work"
 
 # bat + fzf explorer
 alias xxx="vim \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')"
+alias xx="cd \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')(:h)"
