@@ -41,6 +41,10 @@ source ~/.dotfiles/.aliases
 # Fuzzy Search uses `fd` instead of default `find`
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
+# Git diff - need fzf and diff-so-fancy
+,diff () {
+    git diff $@ --name-only | fzf -m --ansi --preview "git diff $@ --color=always -- {-1} | diff-so-fancy"
+}
 ############
 ### PATH ###
 ############
