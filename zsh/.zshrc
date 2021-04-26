@@ -44,7 +44,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 # Git diff - need fzf and diff-so-fancy
 ,diff () {
     cd $(git rev-parse --show-toplevel)
-    git diff $@ --name-only | fzf -m --ansi --preview "git diff $@ --color=always -- {-1} | diff-so-fancy" --preview-window=right:70%
+    git diff $@ --color=always -- $(git diff $@ --name-only | fzf -m --ansi --preview "git diff $@ --color=always -- {-1} | diff-so-fancy" --preview-window=right:70%)
     cd -
 }
 ############
