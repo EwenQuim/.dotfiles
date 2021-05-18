@@ -20,7 +20,6 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
 	git
-	git-prompt
 	github
 	docker
 	virtualenv
@@ -71,5 +70,8 @@ export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
 
 # Node
-
 export PATH="/Users/ewen/.npm-global/bin:$PATH"
+
+# Uses Starfish
+eval "$(starship init zsh)"
+
