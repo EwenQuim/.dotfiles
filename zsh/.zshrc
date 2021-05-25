@@ -75,3 +75,5 @@ export PATH="/Users/ewen/.npm-global/bin:$PATH"
 # Uses Starfish
 eval "$(starship init zsh)"
 
+# zsh syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
