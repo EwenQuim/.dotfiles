@@ -30,10 +30,10 @@ alias ,go="cd ~/go/src/github.com/ewenquim"
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
 alias ll="ls -lahF"
-alias ll="logo-ls -lAGXD"
+alias ll="lsd -lA"
 alias l="ls"
-alias l="logo-ls -GXD"
-alias lt='ls --human-readable --size -1 -S --classify'
+alias l="lsd"
+alias lt='lsd --tree'
 alias rm='rm -v'
 alias h="history"
 alias qp="ps auxwww|more"
