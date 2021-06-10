@@ -87,6 +87,7 @@ alias nowdate='date +"%d-%m-%Y"'
 alias ,clear-cache-memory="echo 'run this as root : \n sync; echo 1 > /proc/sys/vm/drop_caches'"
 
 # Personnal stuff
+alias ,ide="codium ."
 alias ,coalescence="cd ~/dev/coalescence"
 alias ,graphviz="cd ~/go/src/github.com/ewenquim/renpy-graphviz"
 alias ,blog="cd ~/dev/web/ewenquim.gitlab.io"
