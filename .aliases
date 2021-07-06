@@ -27,7 +27,7 @@ alias ,go="cd ~/go/src/github.com/ewenquim"
 # Usual Shell command (cd, ls...)
 alias dirs="ls -al | grep '^d'"
 alias ll="ls -lahF"
-alias ll="lsd -lA"
+alias ll="lsd -lA --total-size"
 alias l="ls"
 alias l="lsd"
 alias lt='lsd --tree'
