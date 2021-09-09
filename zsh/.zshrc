@@ -62,7 +62,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
 # Go cli path
-export PATH="/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
 # Node
 export PATH="/Users/ewen/.npm-global/bin:$PATH"
