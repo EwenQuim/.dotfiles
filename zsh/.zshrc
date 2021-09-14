@@ -44,6 +44,11 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 ,diff () {
     (cd $(git rev-parse --show-toplevel) && git diff $@ --color=always -- $(git diff $@ --name-only | fzf -m --ansi --preview "git diff $@ -- {-1} | delta" --preview-window=right:70%))
 }
+
+# Display in wsl
+export DISPLAY=localhost:0.0 
+
+
 ############
 ### PATH ###
 ############
