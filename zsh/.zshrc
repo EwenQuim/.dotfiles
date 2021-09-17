@@ -1,7 +1,3 @@
-# The Fuck
-eval $(thefuck --alias)
-alias f='fuck'
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -57,7 +53,9 @@ export DISPLAY=localhost:0.0
 export PATH="$PATH:$HOME/.dotfiles/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
-export DBURL="mongodb+srv://quimerch:RzTws2yIcGQhUd9p@quimtest.fcwwu.mongodb.net/minedb?retryWrites=true&w=majority"
+# The Fuck
+eval $(thefuck --alias)
+alias f='fuck'
 
 # Deno
 export DENO_INSTALL="/Users/ewen/.deno"
