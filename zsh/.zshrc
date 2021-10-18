@@ -19,7 +19,8 @@ plugins=(
 	github
 	docker
 	virtualenv
-    golang
+  golang
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
