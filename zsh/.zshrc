@@ -71,6 +71,10 @@ export PATH="$PATH:/usr/local/go/bin"
 # Node
 export PATH="/Users/ewen/.npm-global/bin:$PATH"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # Uses Starfish
 eval "$(starship init zsh)"
 
