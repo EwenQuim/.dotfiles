@@ -89,7 +89,8 @@ alias ,clear-cache-memory="echo 'run this as root : \n sync; echo 1 > /proc/sys/
 # Personnal stuff
 alias ,ide="codium ."
 alias ,coalescence="cd ~/dev/coalescence"
-alias ,graphviz="cd ~/go/src/github.com/ewenquim/renpy-graphviz"
+alias ,hkx="cd ~/dev/horkruxes"
+alias ,graphviz="cd ~/dev/renpy-graphviz"
 alias ,blog="cd ~/dev/web/ewenquim.gitlab.io"
 alias ,blog-edit="code ~/dev/web/ewenquim.gitlab.io"
 alias ,work="cd ~/work"
