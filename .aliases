@@ -95,6 +95,7 @@ alias ,blog="cd ~/dev/web/ewenquim.gitlab.io"
 alias ,blog-edit="code ~/dev/web/ewenquim.gitlab.io"
 alias ,work="cd ~/work"
 alias open="explorer.exe"
+alias ,windows="cd /mnt/c/Users/ewenq"
 
 # bat + fzf explorer
 alias xxx="vim \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')"
