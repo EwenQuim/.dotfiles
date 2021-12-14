@@ -15,6 +15,8 @@ read response\?"${bold}> Are you sure to apply dotfile changes? [Y/n]${normal} "
 if [[ "$response" =~ ^([nN][oO]|[nN])$ ]] ; then
     exit 0
 else
+  if [[ $1 != "server" ]] ;
+  then
     read response\?"${bold}> Enter a commit message? [y/N]${normal} "
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] ; then
         git add -A; git commit; echo "Sync msg written"
@@ -24,6 +26,7 @@ else
 
     echo "\n${bold}> Uploading conf${normal}"
     git push origin master
+  fi
 
     echo "\n${bold}> Copying zsh & oh-my-zsh conf${normal}"
     cp -v zsh/.zshrc ~/.zshrc
