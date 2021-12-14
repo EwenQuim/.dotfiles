@@ -75,6 +75,6 @@ export PATH="/Users/ewen/.npm-global/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Uses Starfish
+# Uses Starship
 eval "$(starship init zsh)"
 
