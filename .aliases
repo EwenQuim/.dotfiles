@@ -21,6 +21,7 @@ alias ,bash-local="vim ~/.bashrc"
 alias ,bash-local-apply="source ~/.bashrc"
 
 alias ,vim="vim ~/.vimrc"
+alias ,sys="sudo systemctl"
 
 alias ,go="cd ~/go/src/github.com/ewenquim"
 
