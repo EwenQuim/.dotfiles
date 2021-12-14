@@ -60,9 +60,6 @@ alias py=python3
 # Google Drive
 alias ,google-drive-mount='google-drive-ocamlfuse ~/GoogleDrive'
 
-# Proxy ViaRezo
-alias ,proxyVR="sshuttle -r lanfeust@proxy.viarezo.fr -x proxy.viarezo.fr 138.195.128.0/19 192.168.0.0/16 10.0.0.0/8"
-
 # NOhup-ed editors, with nohup file transfered in home so it doesn't pollute
 alias ,renpy="cd && nohup ~/dev/renpy-7.3.5-sdk/renpy.sh &;cd -"
 alias ,unity="cd && nohup ~/dev/unity/UnityHub.AppImage &"
