@@ -47,7 +47,6 @@ alias ,dev='cd ~/dev'
 alias ,web='cd ~/dev/web/'
 
 # Git
-alias gs="git status"
 alias grab="git branch | grep -v "master" | xargs git branch -D"
 
 # Python
