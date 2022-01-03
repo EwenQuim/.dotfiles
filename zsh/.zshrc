@@ -78,3 +78,5 @@ export NVM_DIR="$HOME/.nvm"
 # Uses Starship
 eval "$(starship init zsh)"
 
+# Temp
+export PATH="$PATH:/opt/mssql-tools/bin"
