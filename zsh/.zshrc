@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -60,16 +60,13 @@ alias f='fuck'
 
 # Deno
 export DENO_INSTALL="/Users/ewen/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+export PATH="$PATH:$DENO_INSTALL/bin"
 
 # Go
 export GOPATH=$HOME/go
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 # Go cli path
 export PATH="$PATH:/usr/local/go/bin"
-
-# Node
-export PATH="/Users/ewen/.npm-global/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -79,4 +76,3 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 # Temp
-export PATH="$PATH:/opt/mssql-tools/bin"
