@@ -53,10 +53,6 @@ export ENV=dev
 export PATH="$PATH:$HOME/.dotfiles/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
-# The Fuck
-eval $(thefuck --alias)
-alias f='fuck'
-
 # Deno
 export DENO_INSTALL="/Users/ewen/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"
