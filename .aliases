@@ -10,17 +10,17 @@ alias ,up="docker-compose up -d --build"
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
 
 # The following command pulls aliases, edit them, and push them and apply them WOW
-alias ,aliases="vim ~/.dotfiles/.aliases"
+alias ,aliases="edit ~/.dotfiles/.aliases"
 alias ,sync="~/.dotfiles/deploy.sh"
 alias ,sync-first-setup="cat ~/.dotfiles/do-this"
 
-alias ,zsh="vim ~/.dotfiles/zsh/.zshrc"
-alias ,zsh-local="vim ~/.zshrc"
+alias ,zsh="edit ~/.dotfiles/zsh/.zshrc"
+alias ,zsh-local="edit ~/.zshrc"
 alias ,zsh-local-apply="source ~/.zshrc"
-alias ,bash-local="vim ~/.bashrc"
+alias ,bash-local="edit ~/.bashrc"
 alias ,bash-local-apply="source ~/.bashrc"
 
-alias ,vim="vim ~/.vimrc"
+alias ,edit="edit ~/.editrc"
 alias ,sys="sudo systemctl"
 
 alias ,go="cd ~/go/src/github.com/ewenquim"
@@ -93,7 +93,8 @@ alias ,blog-edit="code ~/dev/web/ewenquim.gitlab.io"
 alias ,work="cd ~/work"
 alias ,windows="cd /mnt/c/Users/ewenq"
 alias t="todo"
+alias edit="micro"
 
 # bat + fzf explorer
-alias xxx="vim \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')"
+alias xxx="edit \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')"
 alias xx="cd \$(fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')(:h)"
