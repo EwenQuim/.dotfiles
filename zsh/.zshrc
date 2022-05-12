@@ -71,10 +71,10 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ewenq/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ewenq/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/ewenq/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ewenq/bin/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/ewenq/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ewenq/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Temp
 
