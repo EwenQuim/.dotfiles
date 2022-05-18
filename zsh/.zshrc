@@ -76,5 +76,8 @@ if [ -f '/Users/ewenq/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ewenq
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
+# direnv
+eval "$(direnv hook zsh)" 
+
 # Temp
 
