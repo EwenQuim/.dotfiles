@@ -18,8 +18,8 @@ plugins=(
 	github
 	docker
 	virtualenv
-  golang
-  ssh-agent
+	golang
+ 	ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
+export EDITOR='micro'
 
 # Load aliases
 source ~/.dotfiles/.aliases
@@ -54,7 +54,7 @@ export PATH="$PATH:$HOME/.dotfiles/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Deno
-export DENO_INSTALL="/Users/ewen/.deno"
+export DENO_INSTALL="~/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"
 
 # Go
@@ -71,13 +71,17 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ewenq/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ewenq/bin/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '~/bin/google-cloud-sdk/path.zsh.inc' ]; then . '~/bin/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ewenq/bin/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '~/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '~/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 # direnv
 eval "$(direnv hook zsh)" 
+
+# Go version manager
+
+[[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
 
 # Temp
 
