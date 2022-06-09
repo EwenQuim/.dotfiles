@@ -45,6 +45,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export DISPLAY=localhost:0.0 
 export ENV=dev
 
+setopt HIST_IGNORE_SPACE
+
 ############
 ### PATH ###
 ############
