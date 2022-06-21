@@ -5,6 +5,7 @@ alias ,compose="sudo docker-compose"
 alias ,docker="sudo docker"
 alias ,compose-viz="sudo docker run --rm -it --name dcv -v $(pwd):/input pmsipilot/docker-compose-viz render -m image docker-compose.yml --force"
 alias ,up="docker-compose up -d --build"
+alias dc="docker-compose"
 
 # Temp
 alias ,solve="docker run --rm -v \"$(pwd):/mnt/data\" feust/sudoku-solver:2.1"
