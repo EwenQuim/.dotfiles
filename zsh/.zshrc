@@ -85,5 +85,8 @@ eval "$(direnv hook zsh)"
 
 [[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
 
+# rupa/z - Jump Around
+source ~/sources/z/z.sh
+
 # Temp
 
