@@ -29,10 +29,10 @@ else
   fi
 
     echo "\n${bold}> Linking all dotfile conf${normal}"
-    ln -s zsh/.zshrc ~/.zshrc
-    ln -s zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
-    ln -s .gitconfig ~/.gitconfig
-    ln -s .config ~/.config
+    ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+    ln -s ~/.dotfiles/zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
+    ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+    ln -s ~/.dotfiles/.config ~/.config
 
     echo "\n${bold}ZSH configuration synchronized ✅${normal}"
     source ~/.zshrc
