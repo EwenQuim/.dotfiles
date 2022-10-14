@@ -1,0 +1,18 @@
+2022-05-23 16:34:36,158 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2022-05-23 16:34:36,158 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2022-05-23 16:34:36,161 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'access']
+2022-05-23 16:34:36,164 DEBUG    root            Running [gcloud.secrets.versions.access] with arguments: [VERSION: "projects/158629635779/secrets/postgresql-connection-string/versions/1"]
+2022-05-23 16:34:36,172 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2022-05-23 16:34:36,331 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/158629635779/secrets/postgresql-connection-string/versions/1:access?alt=json HTTP/1.1" 200 None
+2022-05-23 16:34:36,333 INFO     root            Display format: "
+value[terminator="",private](
+  payload.data.decode(base64).decode(utf8)
+)
+"
+2022-05-23 16:34:36,334 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+

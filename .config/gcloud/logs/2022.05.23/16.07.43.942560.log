@@ -1,0 +1,32 @@
+2022-05-23 16:07:43,954 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-05-23 16:07:43,969 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2022-05-23 16:07:43,971 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "bakacode-production", --tunnel-through-iap: "True", --zone: "europe-west1-b", [USER@]INSTANCE: "bastion"]
+2022-05-23 16:07:44,039 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-05-23 16:07:44,377 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:07:49,677 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:07:54,986 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:08:00,287 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:08:05,640 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:08:05,643 DEBUG    root            (gcloud.compute.ssh) Could not fetch resource:
+ - Required 'compute.instances.get' permission for 'projects/bakacode-production/zones/europe-west1-b/instances/bastion'
+Traceback (most recent call last):
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/surface/compute/ssh.py", line 289, in Run
+    instance = ssh_helper.GetInstance(client, instance_ref)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/ssh_utils.py", line 530, in GetInstance
+    return client.MakeRequests([request])[0]
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 106, in MakeRequests
+    utils.RaiseToolException(
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 128, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 137, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - Required 'compute.instances.get' permission for 'projects/bakacode-production/zones/europe-west1-b/instances/bastion'
+
+2022-05-23 16:08:05,647 ERROR    root            (gcloud.compute.ssh) Could not fetch resource:
+ - Required 'compute.instances.get' permission for 'projects/bakacode-production/zones/europe-west1-b/instances/bastion'
+

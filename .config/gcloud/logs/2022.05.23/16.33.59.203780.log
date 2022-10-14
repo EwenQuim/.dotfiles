@@ -1,0 +1,33 @@
+2022-05-23 16:33:59,204 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2022-05-23 16:33:59,205 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2022-05-23 16:33:59,209 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'access']
+2022-05-23 16:33:59,212 DEBUG    root            Running [gcloud.secrets.versions.access] with arguments: [VERSION: "projects/158629635779/secrets/postgresql-connection-string/versions/1n"]
+2022-05-23 16:33:59,240 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2022-05-23 16:33:59,318 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/158629635779/secrets/postgresql-connection-string/versions/1n:access?alt=json HTTP/1.1" 400 None
+2022-05-23 16:33:59,319 DEBUG    root            (gcloud.secrets.versions.access) INVALID_ARGUMENT: The provided Secret Version ID [projects/158629635779/secrets/postgresql-connection-string/versions/1n] does not match the expected format [projects/*/secrets/*/versions/*]
+Traceback (most recent call last):
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/surface/secrets/versions/access.py", line 66, in Run
+    version = secrets_api.Versions().Access(version_ref)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/api_lib/secrets/api.py", line 261, in Access
+    return self.service.Access(
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/secretmanager/v1/secretmanager_v1_client.py", line 131, in Access
+    return self._RunMethod(
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/ewenq/bin/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://secretmanager.googleapis.com/v1/projects/158629635779/secrets/postgresql-connection-string/versions/1n:access?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Mon, 23 May 2022 14:33:59 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "The provided Secret Version ID [projects/158629635779/secrets/postgresql-connection-string/versions/1n] does not match the expected format [projects/*/secrets/*/versions/*]",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+2022-05-23 16:33:59,322 ERROR    root            (gcloud.secrets.versions.access) INVALID_ARGUMENT: The provided Secret Version ID [projects/158629635779/secrets/postgresql-connection-string/versions/1n] does not match the expected format [projects/*/secrets/*/versions/*]

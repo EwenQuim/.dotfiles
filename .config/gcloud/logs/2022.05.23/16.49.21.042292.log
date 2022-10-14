@@ -1,0 +1,145 @@
+2022-05-23 16:49:21,049 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-05-23 16:49:21,057 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'start_iap_tunnel']
+2022-05-23 16:49:21,059 DEBUG    root            Running [gcloud.compute.start-iap-tunnel] with arguments: [--listen-on-stdin: "True", --project: "bakacode-preproduction", --verbosity: "warning", --zone: "europe-west1-b", INSTANCE_NAME: "bastion", INSTANCE_PORT: "22"]
+2022-05-23 16:49:21,125 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-05-23 16:49:21,477 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:49:21,484 WARNING  root            
+
+To increase the performance of the tunnel, consider installing NumPy. For instructions,
+please see https://cloud.google.com/iap/docs/using-tcp-forwarding#increasing_the_tcp_upload_bandwidth
+
+2022-05-23 16:49:21,488 DEBUG    root            credentials type for _GetAccessTokenCallback is [<googlecloudsdk.core.credentials.google_auth_credentials.Credentials object at 0x1045f6ca0>].
+2022-05-23 16:49:21,488 INFO     root            Connecting with URL ['wss://tunnel.cloudproxy.app/v4/connect?project=bakacode-preproduction&port=22&zone=europe-west1-b&instance=bastion&interface=nic0']
+2022-05-23 16:49:21,783 DEBUG    root            RECV opcode [2] data_len [309] binary_data[:20] [b'\x00\x01\x00\x00\x01/AOSJsFRsG59fSU']
+2022-05-23 16:49:21,792 DEBUG    root            RECV opcode [2] data_len [38] binary_data[:20] [b'\x00\x04\x00\x00\x00 SSH-2.0-OpenSS']
+2022-05-23 16:49:21,796 DEBUG    root            ENQUEUED data_len [1533] bytes_to_send[:20] [b'SSH-2.0-OpenSSH_8.6\r']
+2022-05-23 16:49:21,796 DEBUG    root            SEND data_len [1539] send_data[:20] b'\x00\x04\x00\x00\x05\xfdSSH-2.0-OpenSS'
+2022-05-23 16:49:21,818 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x05\xfd']
+2022-05-23 16:49:21,822 DEBUG    root            RECV opcode [2] data_len [1062] binary_data[:20] [b'\x00\x04\x00\x00\x04 \x00\x00\x04\x1c\n\x14\xaaC\xf29\x9b\x92$U']
+2022-05-23 16:49:21,825 DEBUG    root            ENQUEUED data_len [48] bytes_to_send[:20] [b'\x00\x00\x00,\x06\x1e\x00\x00\x00 \x89;\xc5\xffqlm\xc1\xbbr']
+2022-05-23 16:49:21,825 DEBUG    root            SEND data_len [54] send_data[:20] b'\x00\x04\x00\x00\x000\x00\x00\x00,\x06\x1e\x00\x00\x00 \x89;\xc5\xff'
+2022-05-23 16:49:21,848 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06-']
+2022-05-23 16:49:21,853 DEBUG    root            RECV opcode [2] data_len [490] binary_data[:20] [b'\x00\x04\x00\x00\x01\xe4\x00\x00\x00\xbc\x08\x1f\x00\x00\x003\x00\x00\x00\x0b']
+2022-05-23 16:49:21,862 DEBUG    root            ENQUEUED data_len [16] bytes_to_send[:20] [b'\x00\x00\x00\x0c\n\x15\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00']
+2022-05-23 16:49:21,862 DEBUG    root            SEND data_len [22] send_data[:20] b'\x00\x04\x00\x00\x00\x10\x00\x00\x00\x0c\n\x15\x00\x00\x00\x00\x00\x00\x00\x00'
+2022-05-23 16:49:21,862 DEBUG    root            ENQUEUED data_len [44] bytes_to_send[:20] [b'\x92\x8c\x12\xdd\x8f\x90\xa9\x14\x9dgG\x0f2O\xa0\x12F\x1b\x04e']
+2022-05-23 16:49:21,862 DEBUG    root            SEND data_len [50] send_data[:20] b'\x00\x04\x00\x00\x00,\x92\x8c\x12\xdd\x8f\x90\xa9\x14\x9dgG\x0f2O'
+2022-05-23 16:49:21,883 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06=']
+2022-05-23 16:49:21,885 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06i']
+2022-05-23 16:49:21,885 DEBUG    root            RECV opcode [2] data_len [50] binary_data[:20] [b'\x00\x04\x00\x00\x00,c\x1f\x80\xc2Y\xb2\x86\x96\xc1>\x87n\x86f']
+2022-05-23 16:49:21,885 DEBUG    root            ENQUEUED data_len [68] bytes_to_send[:20] [b'\xf9\n\xa5\xbbYf\xa3ps$\xd4\x14U\xa4w\xbd\xc2\xef\xf9\xa7']
+2022-05-23 16:49:21,885 DEBUG    root            SEND data_len [74] send_data[:20] b'\x00\x04\x00\x00\x00D\xf9\n\xa5\xbbYf\xa3ps$\xd4\x14U\xa4'
+2022-05-23 16:49:21,911 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06\xad']
+2022-05-23 16:49:21,918 DEBUG    root            RECV opcode [2] data_len [50] binary_data[:20] [b'\x00\x04\x00\x00\x00,\x80\x90\xdd!\x9c\x82\xc4\xd9\x7f\x87\xd3CC\x02']
+2022-05-23 16:49:21,918 DEBUG    root            ENQUEUED data_len [500] bytes_to_send[:20] [b'X\x16\xad\xfb\x10\xe0\x95\x11ci\xc6r\xc2\x98jU\x03\xf8D\xec']
+2022-05-23 16:49:21,918 DEBUG    root            SEND data_len [506] send_data[:20] b'\x00\x04\x00\x00\x01\xf4X\x16\xad\xfb\x10\xe0\x95\x11ci\xc6r\xc2\x98'
+2022-05-23 16:49:21,941 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x08\xa1']
+2022-05-23 16:49:21,941 DEBUG    root            RECV opcode [2] data_len [466] binary_data[:20] [b'\x00\x04\x00\x00\x01\xcc\xff.\x05\xcdB\xd1\xd5\xf7\x8a]\xec\xf5\xec\xc7']
+2022-05-23 16:49:23,922 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00\x08H'
+2022-05-23 16:49:26,242 DEBUG    root            ENQUEUED data_len [908] bytes_to_send[:20] [b'\xf0\xfd\xc3\x0b\xe4\x82LdA_\xad\x12\x1b\xe76c\xe2x\x14\x92']
+2022-05-23 16:49:26,242 DEBUG    root            SEND data_len [914] send_data[:20] b'\x00\x04\x00\x00\x03\x8c\xf0\xfd\xc3\x0b\xe4\x82LdA_\xad\x12\x1b\xe7'
+2022-05-23 16:49:26,273 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x0c-']
+2022-05-23 16:49:26,280 DEBUG    root            RECV opcode [2] data_len [34] binary_data[:20] [b'\x00\x04\x00\x00\x00\x1ch\xeb\x10\x11\xc1\x84\x17\xd9(\xfb\xea\xc9\xa7\xdb']
+2022-05-23 16:49:26,281 DEBUG    root            ENQUEUED data_len [112] bytes_to_send[:20] [b'\xbaB\x95:\xbdY\x07\x9e\xacR%\xeb\x0eog\x04\xec\xd4\xcc\xf4']
+2022-05-23 16:49:26,281 DEBUG    root            SEND data_len [118] send_data[:20] b'\x00\x04\x00\x00\x00p\xbaB\x95:\xbdY\x07\x9e\xacR%\xeb\x0eo'
+2022-05-23 16:49:26,303 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x0c\x9d']
+2022-05-23 16:49:26,392 DEBUG    root            RECV opcode [2] data_len [782] binary_data[:20] [b'\x00\x04\x00\x00\x03\x08\x84jRk\xbe\x9a&\x19r\x80\x89\x9a/L']
+2022-05-23 16:49:26,396 DEBUG    root            RECV opcode [2] data_len [198] binary_data[:20] [b'\x00\x04\x00\x00\x00\xc0\x7f\xfc\xd8\x8a\xc6T\x14\x06\xe1\xeaQs\xdd\xa6']
+2022-05-23 16:49:26,396 DEBUG    root            ENQUEUED data_len [540] bytes_to_send[:20] [b'*M)\xeek>\xaa\x01\xc3\xfeH\n\xb1\xbck\x1c\x99L\xcaG']
+2022-05-23 16:49:26,396 DEBUG    root            SEND data_len [546] send_data[:20] b'\x00\x04\x00\x00\x02\x1c*M)\xeek>\xaa\x01\xc3\xfeH\n\xb1\xbc'
+2022-05-23 16:49:26,418 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x0e\xb9']
+2022-05-23 16:49:26,419 DEBUG    root            RECV opcode [2] data_len [78] binary_data[:20] [b'\x00\x04\x00\x00\x00H%\xd5q\xa1lW\xacJ\x1bCJ\xf0e\xbf']
+2022-05-23 16:49:26,419 DEBUG    root            ENQUEUED data_len [8228] bytes_to_send[:20] [b'\x95\xc1\xec\xb3\xbd\xc9i>\xe2G\xf3\xbe~\xf18\xd1\xad\xd6?\x8e']
+2022-05-23 16:49:26,419 DEBUG    root            SEND data_len [8234] send_data[:20] b'\x00\x04\x00\x00 $\x95\xc1\xec\xb3\xbd\xc9i>\xe2G\xf3\xbe~\xf1'
+2022-05-23 16:49:26,419 DEBUG    root            ENQUEUED data_len [8856] bytes_to_send[:20] [b',i\x01aV\xc4\xe7\xb3\t\xdc4\x8d\xf2\x00m\xef\x8a\x0f7\xf4']
+2022-05-23 16:49:26,423 DEBUG    root            SEND data_len [8862] send_data[:20] b'\x00\x04\x00\x00"\x98,i\x01aV\xc4\xe7\xb3\t\xdc4\x8d\xf2\x00'
+2022-05-23 16:49:26,423 DEBUG    root            RECV opcode [2] data_len [58] binary_data[:20] [b'\x00\x04\x00\x00\x004P5\xfd\xe9+7\x01O`Y\x8c\xe0\x97v']
+2022-05-23 16:49:26,448 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00.\xdd']
+2022-05-23 16:49:26,449 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00Qu']
+2022-05-23 16:49:26,483 DEBUG    root            RECV opcode [2] data_len [58] binary_data[:20] [b'\x00\x04\x00\x00\x004\t\xc4tS\x0c\xbe\xec\xad0\x01\xf0\xfccz']
+2022-05-23 16:49:26,483 DEBUG    root            RECV opcode [2] data_len [58] binary_data[:20] [b"\x00\x04\x00\x00\x004\xafl\x86Llj\x0f'Ldu\xfcIC"]
+2022-05-23 16:49:26,484 DEBUG    root            RECV opcode [2] data_len [50] binary_data[:20] [b'\x00\x04\x00\x00\x00,\x9c\xa0\xd9\x05We\x06\xc0\x1aH\x9e\x8c@\x8b']
+2022-05-23 16:49:26,541 DEBUG    root            ENQUEUED data_len [104] bytes_to_send[:20] [b'\xd0\x88\x1e\tk\xe4i\x9c\x9e\xac\xfe\xa1\x84+\xa5\xa1}\xc9\xabS']
+2022-05-23 16:49:26,542 DEBUG    root            SEND data_len [110] send_data[:20] b'\x00\x04\x00\x00\x00h\xd0\x88\x1e\tk\xe4i\x9c\x9e\xac\xfe\xa1\x84+'
+2022-05-23 16:49:26,562 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00Q\xdd']
+2022-05-23 16:49:26,564 DEBUG    root            RECV opcode [2] data_len [58] binary_data[:20] [b'\x00\x04\x00\x00\x004a\x04x@\x1c\xa9a\xc8\x82\x88\x13\x17\xc5\x02']
+2022-05-23 16:49:28,547 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00\rp'
+2022-05-23 16:49:48,425 DEBUG    root            ENQUEUED data_len [60] bytes_to_send[:20] [b'1\xe1j%^;\xee\xcc\xbd\x03zG\xbd\xd8\xed\xbac\xae\xdfB']
+2022-05-23 16:49:48,426 DEBUG    root            SEND data_len [66] send_data[:20] b'\x00\x04\x00\x00\x00<1\xe1j%^;\xee\xcc\xbd\x03zG\xbd\xd8'
+2022-05-23 16:49:48,451 DEBUG    root            ENQUEUED data_len [52] bytes_to_send[:20] [b'\xd1\xfc8\x85\xa6\x0b\x0f\xff\x95\x04\xda:y\x85\xa7\x84\xefo\x0ek']
+2022-05-23 16:49:48,451 DEBUG    root            SEND data_len [58] send_data[:20] b'\x00\x04\x00\x00\x004\xd1\xfc8\x85\xa6\x0b\x0f\xff\x95\x04\xda:y\x85'
+2022-05-23 16:49:48,453 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00R\x19']
+2022-05-23 16:49:48,473 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00RM']
+2022-05-23 16:49:48,473 DEBUG    root            RECV opcode [2] data_len [50] binary_data[:20] [b'\x00\x04\x00\x00\x00,\x82`\xd7\xf7w\xe4P\x93\x02\xaa\x88\xa4\xfc)']
+2022-05-23 16:49:48,475 DEBUG    root            ENQUEUED data_len [332] bytes_to_send[:20] [b'\xa0\x01\x83\x91\xb1}\xbd\x15\x87\xd8\xab\x94a\x8f\x8a\xe0c\xb1\x94S']
+2022-05-23 16:49:48,475 DEBUG    root            SEND data_len [338] send_data[:20] b'\x00\x04\x00\x00\x01L\xa0\x01\x83\x91\xb1}\xbd\x15\x87\xd8\xab\x94a\x8f'
+2022-05-23 16:49:48,501 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00S\x99']
+2022-05-23 16:49:48,501 DEBUG    root            RECV opcode [2] data_len [154] binary_data[:20] [b'\x00\x04\x00\x00\x00\x94W\xe3\xe2\xcf\x83\xc3\n\x943\x94\xa5;\xffb']
+2022-05-23 16:49:48,502 DEBUG    root            ENQUEUED data_len [372] bytes_to_send[:20] [b'\xb5\xf2j\x92B\t\x95\x89y\xac\xe0-\x02f\xf2b>\x18\xa2\xb6']
+2022-05-23 16:49:48,502 DEBUG    root            SEND data_len [378] send_data[:20] b'\x00\x04\x00\x00\x01t\xb5\xf2j\x92B\t\x95\x89y\xac\xe0-\x02f'
+2022-05-23 16:49:48,524 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00U\r']
+2022-05-23 16:49:48,529 DEBUG    root            RECV opcode [2] data_len [1602] binary_data[:20] [b'\x00\x04\x00\x00\x06<\xec#8\x89 \x93\xdfYH4\xb9\x9b3!']
+2022-05-23 16:49:48,531 DEBUG    root            ENQUEUED data_len [252] bytes_to_send[:20] [b'\x15\xf0\xfd\xadU\xad\x90\x96\xec6g\xe7~\xdc\xafUr\r\x97\xd0']
+2022-05-23 16:49:48,531 DEBUG    root            SEND data_len [258] send_data[:20] b'\x00\x04\x00\x00\x00\xfc\x15\xf0\xfd\xadU\xad\x90\x96\xec6g\xe7~\xdc'
+2022-05-23 16:49:48,553 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00V\t']
+2022-05-23 16:49:48,557 DEBUG    root            RECV opcode [2] data_len [114] binary_data[:20] [b'\x00\x04\x00\x00\x00l/!0D\x1d\xaf_:\xa1(\x0f\xd0\x87\x89']
+2022-05-23 16:49:48,558 DEBUG    root            ENQUEUED data_len [148] bytes_to_send[:20] [b'\xba<\x8cV.Pq\xbbFz\xc2\xc6\x16\xf0\x944\xdd\xa9\xb9n']
+2022-05-23 16:49:48,558 DEBUG    root            SEND data_len [154] send_data[:20] b'\x00\x04\x00\x00\x00\x94\xba<\x8cV.Pq\xbbFz\xc2\xc6\x16\xf0'
+2022-05-23 16:49:48,578 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00V\x9d']
+2022-05-23 16:49:48,580 DEBUG    root            RECV opcode [2] data_len [186] binary_data[:20] [b'\x00\x04\x00\x00\x00\xb4\xf8\xb63,\xe3k\xb7g\x8ak\xcf\x7f\xa0\xef']
+2022-05-23 16:49:48,584 DEBUG    root            ENQUEUED data_len [252] bytes_to_send[:20] [b'\xaa\x93\x82N\xb5I\xf6\x7f\xdd\xa1\\\xc6,\xcb\x7f\x98\x18\xa9\x0fN']
+2022-05-23 16:49:48,584 DEBUG    root            SEND data_len [258] send_data[:20] b'\x00\x04\x00\x00\x00\xfc\xaa\x93\x82N\xb5I\xf6\x7f\xdd\xa1\\\xc6,\xcb'
+2022-05-23 16:49:48,612 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00W\x99']
+2022-05-23 16:49:48,613 DEBUG    root            RECV opcode [2] data_len [514] binary_data[:20] [b'\x00\x04\x00\x00\x01\xfc\x15N\xd5\xbf%o\x1fmL$\x81\xc7\xd5:']
+2022-05-23 16:49:50,590 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00\x17\x88'
+2022-05-23 16:49:53,838 DEBUG    root            ENQUEUED data_len [92] bytes_to_send[:20] [b'e\xf9\xc8\x15?\xb7\xc1\xc3\xbf\x04*+\xf9\xc3\x15\xd0\xad\xa6\xc2\xf8']
+2022-05-23 16:49:53,839 DEBUG    root            SEND data_len [98] send_data[:20] b'\x00\x04\x00\x00\x00\\e\xf9\xc8\x15?\xb7\xc1\xc3\xbf\x04*+\xf9\xc3'
+2022-05-23 16:49:53,867 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00W\xf5']
+2022-05-23 16:49:53,871 DEBUG    root            RECV opcode [2] data_len [2098] binary_data[:20] [b'\x00\x04\x00\x00\x08,u\xffk\xabdH\xbc\xf6\xb6C\x81S\xf2K']
+2022-05-23 16:49:53,871 DEBUG    root            RECV opcode [2] data_len [1650] binary_data[:20] [b'\x00\x04\x00\x00\x06lo\x8a\x1c\xd8\xecb\x17\x17Y\xdd\xe9\xe9A\xb9']
+2022-05-23 16:49:55,845 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00& '
+2022-05-23 16:51:53,890 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<(\x948\xcd\xdd)\x07\x96\xd4\xb3\xa6\xd4\xed\xd6']
+2022-05-23 16:51:53,902 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\xd2\xa7\xb9\xffv\x11\xb9\xdd\xe0\xbe\xa6\x9d\x87\x14\xca q\x7fEU']
+2022-05-23 16:51:53,902 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\xd2\xa7\xb9\xffv\x11\xb9\xdd\xe0\xbe\xa6\x9d\x87\x14'
+2022-05-23 16:51:53,926 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X\x19']
+2022-05-23 16:51:55,909 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00&\\'
+2022-05-23 16:53:53,948 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<(6?\xeb*t\xb2\xc7\x9e\x89\xcc=Sw']
+2022-05-23 16:53:53,951 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\x9f\x00\xc7#*\x92\x03\x9d\x94\x16_\x97W\x88\xc5\xef\x1em\xe5\xb3']
+2022-05-23 16:53:53,951 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\x9f\x00\xc7#*\x92\x03\x9d\x94\x16_\x97W\x88'
+2022-05-23 16:53:53,974 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X=']
+2022-05-23 16:53:55,957 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00&\x98'
+2022-05-23 16:55:54,178 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<\xde\x9d\xfaP+\xb9D\xc0\x17$\x10k=\xe4']
+2022-05-23 16:55:54,181 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\x13\xc4R(\xd3-\xf9\xfc\x1f\x1f\xdf\xac\xd3m\x1f\x99=5v\xe6']
+2022-05-23 16:55:54,181 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\x13\xc4R(\xd3-\xf9\xfc\x1f\x1f\xdf\xac\xd3m'
+2022-05-23 16:55:54,204 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00Xa']
+2022-05-23 16:55:56,183 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00&\xd4'
+2022-05-23 16:57:54,397 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<"\x89\x95\xc3\xd7\x13N\x13\xba\xce\xf5y\x19\xcb']
+2022-05-23 16:57:54,401 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\x00\xb5Ff\xb9;#Q\xd6\xf4N\xc2\x06\x06(6\xe1\x18UJ']
+2022-05-23 16:57:54,401 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\x00\xb5Ff\xb9;#Q\xd6\xf4N\xc2\x06\x06'
+2022-05-23 16:57:54,425 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X\x85']
+2022-05-23 16:57:56,402 DEBUG    root            SEND data_len [10] send_data[:20] b"\x00\x07\x00\x00\x00\x00\x00\x00'\x10"
+2022-05-23 16:59:54,526 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<\xd8d\xfe\xba\x9f?$\xfe\x1a\xc3t\xfa\x86a']
+2022-05-23 16:59:54,530 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\xcd\xef\x07\xc2\xdc\xd8\x93~k\x1f\x13\xa9\xf4\x8a\x15\xee[\xaa\xd3]']
+2022-05-23 16:59:54,530 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\xcd\xef\x07\xc2\xdc\xd8\x93~k\x1f\x13\xa9\xf4\x8a'
+2022-05-23 16:59:54,552 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X\xa9']
+2022-05-23 16:59:56,536 DEBUG    root            SEND data_len [10] send_data[:20] b"\x00\x07\x00\x00\x00\x00\x00\x00'L"
+2022-05-23 17:01:54,656 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<\x8e\xf7S\x0f\r\xc74\x80\x1a\xae\x16\x19r\x0c']
+2022-05-23 17:01:54,661 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'k\xf1n`\x01\x92\xd9RW\xb9\xf6\xd1\xf04\x1enV\xc8\\\x8d']
+2022-05-23 17:01:54,661 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$k\xf1n`\x01\x92\xd9RW\xb9\xf6\xd1\xf04'
+2022-05-23 17:01:54,685 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X\xcd']
+2022-05-23 17:01:56,666 DEBUG    root            SEND data_len [10] send_data[:20] b"\x00\x07\x00\x00\x00\x00\x00\x00'\x88"
+2022-05-23 17:03:54,836 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<{\x84Wr\x95A\xda$H\x05Ao\x9f\xe6']
+2022-05-23 17:03:54,838 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'@\x88\xd6<>\xad\xcd\x1bQD}\xba{9\xc3\xa1\xfc\x84*\xcb']
+2022-05-23 17:03:54,838 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$@\x88\xd6<>\xad\xcd\x1bQD}\xba{9'
+2022-05-23 17:03:54,867 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00X\xf1']
+2022-05-23 17:03:56,840 DEBUG    root            SEND data_len [10] send_data[:20] b"\x00\x07\x00\x00\x00\x00\x00\x00'\xc4"
+2022-05-23 17:05:54,905 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<\xad\xe4\x1c\x81\xa8\xc9\xea\xd8\xf0\xd1gX\xa0\x17']
+2022-05-23 17:05:54,909 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'`lz\xf3\x03*\xe2\xb46l\xe9\x1fyB\xbf?\x88\xad\xd1=']
+2022-05-23 17:05:54,910 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$`lz\xf3\x03*\xe2\xb46l\xe9\x1fyB'
+2022-05-23 17:05:54,932 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00Y\x15']
+2022-05-23 17:05:56,916 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00(\x00'
+2022-05-23 17:07:55,008 DEBUG    root            RECV opcode [2] data_len [66] binary_data[:20] [b'\x00\x04\x00\x00\x00<$\xdcd\r\x9b\xa1[\xee\xe9X\xfd\xee\xaaQ']
+2022-05-23 17:07:55,011 DEBUG    root            ENQUEUED data_len [36] bytes_to_send[:20] [b'\xa5G\x96Q\xad\xc9\xbe\x8e\xf7[\x00\xc2\xed\x87\xb9x,Bu\x82']
+2022-05-23 17:07:55,012 DEBUG    root            SEND data_len [42] send_data[:20] b'\x00\x04\x00\x00\x00$\xa5G\x96Q\xad\xc9\xbe\x8e\xf7[\x00\xc2\xed\x87'
+2022-05-23 17:07:55,036 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00Y9']
+2022-05-23 17:07:57,014 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00(<'

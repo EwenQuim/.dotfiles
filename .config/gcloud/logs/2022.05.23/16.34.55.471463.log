@@ -1,0 +1,35 @@
+2022-05-23 16:34:55,472 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2022-05-23 16:34:55,473 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2022-05-23 16:34:55,475 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'list']
+2022-05-23 16:34:55,477 DEBUG    root            Running [gcloud.secrets.versions.list] with arguments: [--format: "json", SECRET: "projects/bakacode-production/secrets/postgresql-connection-string"]
+2022-05-23 16:34:55,482 INFO     root            Display format: "
+table(
+  name.basename():label=NAME,
+  state.enum(secrets.StateVersionJobState).color('destroyed', 'disabled', 'enabled', 'unknown'):label=STATE,
+  createTime.date():label=CREATED,
+  destroyTime.date(undefined='-'):label=DESTROYED
+)
+ json"
+2022-05-23 16:34:55,488 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2022-05-23 16:34:55,784 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/bakacode-production/secrets/postgresql-connection-string/versions?alt=json&pageSize=0 HTTP/1.1" 200 None
+2022-05-23 16:34:55,789 INFO     ___FILE_ONLY___ [
+  {
+2022-05-23 16:34:55,789 INFO     ___FILE_ONLY___ 
+    "createTime": "2022-04-28T15:38:11.950968Z",
+2022-05-23 16:34:55,789 INFO     ___FILE_ONLY___ 
+    "etag": "\"15ddb8b6b0d8ef\"",
+2022-05-23 16:34:55,789 INFO     ___FILE_ONLY___ 
+    "name": "projects/158629635779/secrets/postgresql-connection-string/versions/1",
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+    "replicationStatus": {
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+      "automatic": {}
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+    },
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+    "state": "ENABLED"
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+  }
+2022-05-23 16:34:55,790 INFO     ___FILE_ONLY___ 
+]
+

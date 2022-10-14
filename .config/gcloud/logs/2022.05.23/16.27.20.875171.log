@@ -1,0 +1,37 @@
+2022-05-23 16:27:20,882 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-05-23 16:27:20,890 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'start_iap_tunnel']
+2022-05-23 16:27:20,891 DEBUG    root            Running [gcloud.compute.start-iap-tunnel] with arguments: [--listen-on-stdin: "True", --project: "bakacode-production", --verbosity: "warning", --zone: "europe-west1-b", INSTANCE_NAME: "bastion", INSTANCE_PORT: "22"]
+2022-05-23 16:27:20,959 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-05-23 16:27:21,336 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:27:21,343 WARNING  root            
+
+To increase the performance of the tunnel, consider installing NumPy. For instructions,
+please see https://cloud.google.com/iap/docs/using-tcp-forwarding#increasing_the_tcp_upload_bandwidth
+
+2022-05-23 16:27:21,347 DEBUG    root            credentials type for _GetAccessTokenCallback is [<googlecloudsdk.core.credentials.google_auth_credentials.Credentials object at 0x107ebd4c0>].
+2022-05-23 16:27:21,347 INFO     root            Connecting with URL ['wss://tunnel.cloudproxy.app/v4/connect?project=bakacode-production&port=22&zone=europe-west1-b&instance=bastion&interface=nic0']
+2022-05-23 16:27:21,500 DEBUG    root            RECV opcode [2] data_len [306] binary_data[:20] [b'\x00\x01\x00\x00\x01,AOSJsFRoiAnGkf']
+2022-05-23 16:27:21,510 DEBUG    root            ENQUEUED data_len [21] bytes_to_send[:20] [b'SSH-2.0-OpenSSH_8.6\r']
+2022-05-23 16:27:21,510 DEBUG    root            SEND data_len [27] send_data[:20] b'\x00\x04\x00\x00\x00\x15SSH-2.0-OpenSS'
+2022-05-23 16:27:21,512 DEBUG    root            RECV opcode [2] data_len [38] binary_data[:20] [b'\x00\x04\x00\x00\x00 SSH-2.0-OpenSS']
+2022-05-23 16:27:21,514 DEBUG    root            ENQUEUED data_len [1512] bytes_to_send[:20] [b'\x00\x00\x05\xe4\n\x1481\x13\xe1[\xc3\x94\t\x83w\xc4?J\xa1']
+2022-05-23 16:27:21,514 DEBUG    root            SEND data_len [1518] send_data[:20] b'\x00\x04\x00\x00\x05\xe8\x00\x00\x05\xe4\n\x1481\x13\xe1[\xc3\x94\t'
+2022-05-23 16:27:21,532 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x00\x15']
+2022-05-23 16:27:21,535 DEBUG    root            RECV opcode [2] data_len [1062] binary_data[:20] [b"\x00\x04\x00\x00\x04 \x00\x00\x04\x1c\n\x14\xa7\xab4\xf3\xe8\x9d\xf9'"]
+2022-05-23 16:27:21,536 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x05\xfd']
+2022-05-23 16:27:21,539 DEBUG    root            ENQUEUED data_len [48] bytes_to_send[:20] [b'\x00\x00\x00,\x06\x1e\x00\x00\x00 C\xb2G\x8d\xe9\xfa\xefUF!']
+2022-05-23 16:27:21,539 DEBUG    root            SEND data_len [54] send_data[:20] b'\x00\x04\x00\x00\x000\x00\x00\x00,\x06\x1e\x00\x00\x00 C\xb2G\x8d'
+2022-05-23 16:27:21,560 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06-']
+2022-05-23 16:27:21,568 DEBUG    root            RECV opcode [2] data_len [490] binary_data[:20] [b'\x00\x04\x00\x00\x01\xe4\x00\x00\x00\xbc\x08\x1f\x00\x00\x003\x00\x00\x00\x0b']
+2022-05-23 16:27:21,581 DEBUG    root            ENQUEUED data_len [16] bytes_to_send[:20] [b'\x00\x00\x00\x0c\n\x15\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00']
+2022-05-23 16:27:21,581 DEBUG    root            SEND data_len [22] send_data[:20] b'\x00\x04\x00\x00\x00\x10\x00\x00\x00\x0c\n\x15\x00\x00\x00\x00\x00\x00\x00\x00'
+2022-05-23 16:27:21,581 DEBUG    root            ENQUEUED data_len [44] bytes_to_send[:20] [b'\x08#\x9ayC\x08\x85\t\x17\xfd\x8e\x85`F\xdb\x05\n\xbdR\xd3']
+2022-05-23 16:27:21,581 DEBUG    root            SEND data_len [50] send_data[:20] b'\x00\x04\x00\x00\x00,\x08#\x9ayC\x08\x85\t\x17\xfd\x8e\x85`F'
+2022-05-23 16:27:21,601 INFO     root            Client closed connection from [stdin].
+2022-05-23 16:27:21,601 DEBUG    root            CLOSE
+2022-05-23 16:27:21,601 DEBUG    root            SEND data_len [10] send_data[:20] b'\x00\x07\x00\x00\x00\x00\x00\x00\x06$'
+2022-05-23 16:27:21,602 DEBUG    root            RECV opcode [2] data_len [10] binary_data[:20] [b'\x00\x07\x00\x00\x00\x00\x00\x00\x06=']
+2022-05-23 16:27:21,602 INFO     root            Unable to send WebSocket ack [EOF occurred in violation of protocol (_ssl.c:2483)]
+2022-05-23 16:27:21,602 INFO     root            Unable to send WebSocket Close message [EOF occurred in violation of protocol (_ssl.c:2483)].
+2022-05-23 16:27:21,603 INFO     root            Keyboard interrupt received.
+2022-05-23 16:27:21,604 INFO     root            Display format: "default"

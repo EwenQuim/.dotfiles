@@ -89,4 +89,3 @@ eval "$(direnv hook zsh)"
 source ~/sources/z/z.sh
 
 # Temp
-

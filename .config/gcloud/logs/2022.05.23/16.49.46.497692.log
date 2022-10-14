@@ -1,0 +1,11 @@
+2022-05-23 16:49:46,498 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2022-05-23 16:49:46,499 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2022-05-23 16:49:46,502 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'access']
+2022-05-23 16:49:46,506 DEBUG    root            Running [gcloud.secrets.versions.access] with arguments: [VERSION: "projects/658620740302/secrets/postgresql-connection-string/versions/4"]
+2022-05-23 16:49:46,515 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2022-05-23 16:49:46,663 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/658620740302/secrets/postgresql-connection-string/versions/4:access?alt=json HTTP/1.1" 200 None
+2022-05-23 16:49:46,665 INFO     root            Display format: "
+value[terminator="",private](
+  payload.data.decode(base64).decode(utf8)
+)
+"

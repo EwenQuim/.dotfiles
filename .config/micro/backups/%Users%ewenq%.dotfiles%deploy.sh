@@ -28,11 +28,10 @@ else
     git push origin master
   fi
 
-    echo "\n${bold}> Linking all dotfile conf${normal}"
+    echo "\n${bold}> Linking zsh & oh-my-zsh conf${normal}"
     ln -s zsh/.zshrc ~/.zshrc
     ln -s zsh/custom.zsh-theme ~/.oh-my-zsh/custom/themes/
     ln -s .gitconfig ~/.gitconfig
-    ln -s .config ~/.config
 
     echo "\n${bold}ZSH configuration synchronized ✅${normal}"
     source ~/.zshrc

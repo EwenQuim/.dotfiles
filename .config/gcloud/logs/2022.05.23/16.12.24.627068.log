@@ -1,0 +1,57 @@
+2022-05-23 16:12:24,643 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-05-23 16:12:24,663 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2022-05-23 16:12:24,664 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "bakacode-production", --tunnel-through-iap: "True", --zone: "europe-west1-b", [USER@]INSTANCE: "bastion"]
+2022-05-23 16:12:24,775 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-05-23 16:12:25,092 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:12:25,358 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:12:25,367 DEBUG    root            OS Login Enabled: None
+Security Keys Enabled: False
+Username: ewenq
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2022-05-23 16:12:25,369 DEBUG    root            Current SSH keys in project: ['arthur:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb5nGlYkdKPzZGQQdjy9dFnCOl2Au6Lmdwzr4hShA+SX4s/3uFnS4/geZl7RG56xX8fwH4IqO7EmEczWXBuoh/40eS6Efpw+FjtxkJHoJN77D3ws3JYL79k3QhkZcQHeMvFu5E4ClgADmSWTwtONQAN6x17ni43UnRtkaTOkmMiodC5+V/Rk/bE8Cd/U/9rIhZrmg5SvEFGzUwa/p0kjwNM8o9xM4uU6DvP/C/XRmDzvP19p/9In1r4EVUlvBU8lo6/yAQWkD4Aay+gdcbkJ6GAEyT/Wwo8PJt8xN4xh8+KToVyXfIypTQcdI1lSzHIU/4Z5VEfTsIH8YiJmk/psXd arthur@arthurs-macbook-pro.home']
+2022-05-23 16:12:25,370 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2022-05-23 16:12:26,151 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:12:26,154 DEBUG    root            Operations to inspect: [<Operation
+ id: 3792297770080413862
+ insertTime: '2022-05-23T07:12:25.811-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1653315145391-5dfae6df15e0c-6bd459eb-9676de35'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/bakacode-production/global/operations/operation-1653315145391-5dfae6df15e0c-6bd459eb-9676de35'
+ startTime: '2022-05-23T07:12:25.829-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 158629635779
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/bakacode-production'
+ user: 'ewenq@theodo.fr'
+ warnings: []>]
+2022-05-23 16:12:36,960 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:12:36,963 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-05-23T07:12:36.679-07:00'
+ id: 3792297770080413862
+ insertTime: '2022-05-23T07:12:25.811-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1653315145391-5dfae6df15e0c-6bd459eb-9676de35'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/bakacode-production/global/operations/operation-1653315145391-5dfae6df15e0c-6bd459eb-9676de35'
+ startTime: '2022-05-23T07:12:25.829-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 158629635779
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/bakacode-production'
+ user: 'ewenq@theodo.fr'
+ warnings: []>]
+2022-05-23 16:12:36,981 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/bakacode-production].
+
+2022-05-23 16:12:37,252 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-05-23 16:12:37,371 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2022-05-23 16:12:37,372 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/ewenq/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.2343084489121960613 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/ewenq/.ssh/google_compute_known_hosts -o ProxyCommand /opt/homebrew/bin/python3 -S /Users/ewenq/bin/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel bastion %p --listen-on-stdin --project=bakacode-production --zone=europe-west1-b --verbosity=warning -o ProxyUseFdpass=no ewenq@compute.2343084489121960613 -- true].
+2022-05-23 16:12:37,372 DEBUG    root            Executing command: ['/usr/bin/ssh', '-T', '-i', '/Users/ewenq/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.2343084489121960613', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/Users/ewenq/.ssh/google_compute_known_hosts', '-o', 'ProxyCommand /opt/homebrew/bin/python3 -S /Users/ewenq/bin/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel bastion %p --listen-on-stdin --project=bakacode-production --zone=europe-west1-b --verbosity=warning', '-o', 'ProxyUseFdpass=no', 'ewenq@compute.2343084489121960613', '--', 'true']
+2022-05-23 16:14:02,442 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/ewenq/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.2343084489121960613 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/ewenq/.ssh/google_compute_known_hosts -o ProxyCommand /opt/homebrew/bin/python3 -S /Users/ewenq/bin/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel bastion %p --listen-on-stdin --project=bakacode-production --zone=europe-west1-b --verbosity=warning -o ProxyUseFdpass=no ewenq@compute.2343084489121960613 /bin/sh -c 'P=python3; $P -V 2>/dev/null || P=python; exec "$P" -c '"'"'import sys, os; verbosity=0; sys.stdin = os.fdopen(0, "rb"); exec(compile(sys.stdin.read(1704), "assembler.py", "exec")); sys.exit(98);'"'"'; exit 97'].
+2022-05-23 16:14:02,444 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/Users/ewenq/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.2343084489121960613', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/Users/ewenq/.ssh/google_compute_known_hosts', '-o', 'ProxyCommand /opt/homebrew/bin/python3 -S /Users/ewenq/bin/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel bastion %p --listen-on-stdin --project=bakacode-production --zone=europe-west1-b --verbosity=warning', '-o', 'ProxyUseFdpass=no', 'ewenq@compute.2343084489121960613', '/bin/sh -c \'P=python3; $P -V 2>/dev/null || P=python; exec "$P" -c \'"\'"\'import sys, os; verbosity=0; sys.stdin = os.fdopen(0, "rb"); exec(compile(sys.stdin.read(1704), "assembler.py", "exec")); sys.exit(98);\'"\'"\'; exit 97\'']
+2022-05-23 16:15:10,061 DEBUG    root            Subprocess [19742] got [2]
