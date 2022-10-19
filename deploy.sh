@@ -34,7 +34,7 @@ else
     ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
     ln -s ~/.dotfiles/.config ~/.config
-    ln -s ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+    ln -s ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh
 
     echo "\n${bold}ZSH configuration synchronized ✅${normal}"
     source ~/.zshrc
