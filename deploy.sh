@@ -29,7 +29,7 @@ else
   fi
 
     echo "\n${bold}> Linking all dotfile conf${normal}"
-    ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+    ln -s ~/.dotfiles/.zshrc ~/.zshrc
     ln -s ~/.dotfiles/Brewfile ~/Brewfile
     ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
