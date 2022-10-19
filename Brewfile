@@ -45,6 +45,8 @@ brew "libpq", link: true
 brew "lsd"
 # Ultra relevant, instant and typo-tolerant full-text search API
 brew "meilisearch"
+# Modern and intuitive terminal-based text editor
+brew "micro"
 # NCurses Disk Usage
 brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -73,15 +75,11 @@ brew "watch"
 cask "android-platform-tools"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
-# Reimagine your terminal
-cask "fig"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Clipboard manager
 cask "jumpcut"
 # System monitor for the menu bar
 cask "stats"
-# Real time file synchronization software
-cask "syncthing"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
