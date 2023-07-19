@@ -32,7 +32,6 @@ alias ll="lsd -lA --total-size"
 alias l="ls"
 alias l="lsd"
 alias lt='lsd --tree'
-alias rm='rm -v'
 alias h="history"
 alias qp="ps auxwww|more"
 alias ccat='pygmentize -g'
